@@ -467,14 +467,30 @@
             </li>
           </ul>
         </div>
-        <div class="join-form">
-          <p class="join">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
-          <input type="text" placeholder="E-mail" name="Email" />
-          <input type="submit" value="Подписаться" class="button primary" />
-        </div>
+        <form class="join-form">
+          <label class="join foot" for="subscribe"
+            >Подпишитесь на рассылку</label
+          >
+          <div class="sub">
+            <input
+              class="join-form-air"
+              type="email"
+              name="email"
+              id="subscribe"
+              placeholder="E-mail@mail.com"
+            />
+            <button class="button primary" type="button">
+              Подписаться
+              <svg class="send-icon">
+                <use href="./img/sp.svg#samolet"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
       <small class="copy">2020 | Developed by GoIT Students</small>
     </footer>
+    <!-- MODAL WINDOW -->
     <div class="background is-hidden" data-modal>
       <div class="modal">
         <form class="clients-form" autocomplete="off">
